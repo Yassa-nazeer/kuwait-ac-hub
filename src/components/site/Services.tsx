@@ -1,13 +1,13 @@
 import { motion } from "motion/react";
-import { ShoppingCart, Recycle, Tag, Wrench, Sparkles, Snowflake } from "lucide-react";
+import { ShoppingCart, Wrench, Snowflake, Truck, BadgeDollarSign, Clock } from "lucide-react";
 
 const services = [
-  { icon: ShoppingCart, title: "شراء مكيفات مستعملة", desc: "نشتري جميع أنواع وأحجام المكيفات المستعملة بأعلى الأسعار في الكويت." },
-  { icon: Recycle, title: "شراء سكراب المكيفات", desc: "نشتري سكراب التكييف المركزي والشباك والسبليت بأفضل الأسعار اليومية." },
-  { icon: Tag, title: "بيع مكيفات مستعملة", desc: "مكيفات مستعملة بحالة ممتازة مع ضمان التشغيل وأسعار تناسب الجميع." },
-  { icon: Wrench, title: "فك ونقل المكيفات", desc: "فريق محترف لفك ونقل المكيفات بجميع أنواعها بسرعة وأمان تام." },
-  { icon: Sparkles, title: "صيانة وتنظيف المكيفات", desc: "صيانة شاملة وتنظيف عميق لضمان كفاءة التبريد وعمر أطول للجهاز." },
-  { icon: Snowflake, title: "سبليت • شباك • مركزي", desc: "نتعامل مع جميع الأنواع: السبليت، الشباك، المركزي، الكاسيت والدكتد." },
+  { icon: ShoppingCart, title: "شراء مكيفات سبليت مستعملة", desc: "نشتري مكيفات السبليت المستعملة بجميع الأحجام والماركات بأعلى سعر فوري في الكويت." },
+  { icon: Snowflake, title: "شراء مكيفات شباك مستعملة", desc: "نشتري مكيفات الشباك المستعملة سواء بحالة جيدة أو غير شغالة بأفضل الأسعار." },
+  { icon: Wrench, title: "شراء مكيفات مركزي مستعملة", desc: "نشتري مكيفات التكييف المركزي والكاسيت والدكتد المستعملة بكميات كبيرة وصغيرة." },
+  { icon: Truck, title: "فك ونقل مجاني", desc: "فريق محترف لفك المكيفات ونقلها مجاناً فور الاتفاق على السعر في جميع مناطق الكويت." },
+  { icon: BadgeDollarSign, title: "تقييم فوري وأسعار شفافة", desc: "نقدّم لك تقييم سعر فوري عبر الواتساب أو المعاينة المجانية في موقعك." },
+  { icon: Clock, title: "خدمة سريعة 24/7", desc: "نستجيب لطلبك في أسرع وقت ممكن — معاينة وشراء في نفس اليوم." },
 ];
 
 export function Services() {
@@ -21,8 +21,8 @@ export function Services() {
           className="text-center max-w-2xl mx-auto mb-16"
         >
           <div className="inline-block glass rounded-full px-4 py-1.5 text-xs font-bold text-accent mb-4">خدماتنا</div>
-          <h2 className="text-4xl md:text-5xl font-black mb-4">حلول متكاملة <span className="text-gradient">للمكيفات والسكراب</span></h2>
-          <p className="text-muted-foreground text-lg">خدمة احترافية شاملة من الشراء والبيع إلى الفك والنقل والصيانة في جميع مناطق الكويت.</p>
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-black mb-4">نشتري <span className="text-gradient">جميع أنواع المكيفات</span> المستعملة</h2>
+          <p className="text-muted-foreground text-lg md:text-xl">متخصصون في شراء المكيفات المستعملة بجميع أنواعها وأحجامها في جميع مناطق الكويت بأعلى الأسعار.</p>
         </motion.div>
 
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">

@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Phone, MessageCircle, Sparkles, ArrowLeft } from "lucide-react";
+import { Phone, MessageCircle, Sparkles } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 
 const WHATSAPP = "https://wa.me/96565954080?text=" + encodeURIComponent("مرحبا، أرغب ببيع مكيفات مستعملة والحصول على تقييم");
@@ -28,7 +28,7 @@ export function Hero() {
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.12] mb-6">
               نشتري{" "}
-              <span class[]="text-gradient">المكيفات المستعملة</span>{" "}
+              <span className="text-gradient">المكيفات المستعملة</span>{" "}
               في الكويت بأعلى الأسعار
             </h1>
 
