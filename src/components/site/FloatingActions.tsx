@@ -8,16 +8,16 @@ export function FloatingActions() {
         target="_blank"
         rel="noopener"
         aria-label="WhatsApp"
-        className="fixed bottom-6 left-6 z-50 w-14 h-14 rounded-full bg-[var(--whatsapp)] grid place-items-center shadow-glow animate-glow-pulse hover:scale-110 transition-transform"
+        className="fixed bottom-6 left-6 z-50 w-16 h-16 md:w-[68px] md:h-[68px] rounded-full bg-[var(--whatsapp)] grid place-items-center shadow-glow animate-glow-pulse hover:scale-110 transition-transform"
       >
-        <MessageCircle className="w-7 h-7 text-white" />
+        <MessageCircle className="w-8 h-8 text-white" />
       </a>
       <a
         href="tel:65954080"
         aria-label="Call"
-        className="md:hidden fixed bottom-6 right-6 z-50 w-14 h-14 rounded-full gradient-primary grid place-items-center shadow-glow hover:scale-110 transition-transform"
+        className="fixed bottom-6 right-6 z-50 w-16 h-16 md:w-[68px] md:h-[68px] rounded-full gradient-primary grid place-items-center shadow-glow animate-glow-pulse hover:scale-110 transition-transform"
       >
-        <Phone className="w-6 h-6 text-primary-foreground" />
+        <Phone className="w-7 h-7 text-primary-foreground" />
       </a>
     </>
   );

@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { Phone, MessageCircle, Sparkles, ArrowLeft } from "lucide-react";
 import heroImg from "@/assets/hero.jpg";
 
-const WHATSAPP = "https://wa.me/96565954080?text=" + encodeURIComponent("مرحبا، أرغب بطلب تقييم لمكيفات مستعملة / سكراب");
+const WHATSAPP = "https://wa.me/96565954080?text=" + encodeURIComponent("مرحبا، أرغب ببيع مكيفات مستعملة والحصول على تقييم");
 
 export function Hero() {
   return (
@@ -21,33 +21,29 @@ export function Hero() {
             transition={{ duration: 0.8 }}
             className="text-center lg:text-right"
           >
-            <div className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 mb-6">
+            <div className="inline-flex items-center gap-2 glass rounded-full px-5 py-2.5 mb-6">
               <Sparkles className="w-4 h-4 text-accent" />
-              <span className="text-xs font-bold text-foreground">رقم 1 في الكويت لشراء وبيع المكيفات المستعملة</span>
+              <span className="text-sm font-bold text-foreground">رقم 1 في الكويت لشراء المكيفات المستعملة</span>
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.15] mb-6">
-              نشتري ونبيع{" "}
-              <span className="text-gradient">المكيفات المستعملة</span>{" "}
-              والسكراب في الكويت بأفضل الأسعار
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.12] mb-6">
+              نشتري{" "}
+              <span class[]="text-gradient">المكيفات المستعملة</span>{" "}
+              في الكويت بأعلى الأسعار
             </h1>
 
-            <p className="text-lg text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
-              شراء جميع أنواع المكيفات المستعملة والسكراب — فك، نقل، صيانة، وبيع بأسرع خدمة داخل الكويت. معاينة مجانية وأسعار لا تُقارن.
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl mx-auto lg:mx-0 leading-relaxed">
+              نشتري جميع أنواع وأحجام المكيفات المستعملة — سبليت، شباك، مركزي — بأسعار لا تُقارن. فك ونقل مجاني، ومعاينة فورية داخل جميع مناطق الكويت.
             </p>
 
             <div className="flex flex-wrap gap-3 justify-center lg:justify-start">
-              <a href="tel:65954080" className="group inline-flex items-center gap-2 gradient-primary text-primary-foreground px-6 py-4 rounded-2xl font-bold shadow-glow hover:scale-105 transition-transform">
+              <a href="tel:65954080" className="group inline-flex items-center gap-2 gradient-primary text-primary-foreground px-7 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg shadow-glow hover:scale-105 transition-transform">
                 <Phone className="w-5 h-5" />
                 اتصل الآن
               </a>
-              <a href={WHATSAPP} target="_blank" rel="noopener" className="group inline-flex items-center gap-2 bg-[var(--whatsapp)] text-white px-6 py-4 rounded-2xl font-bold hover:scale-105 transition-transform shadow-card">
+              <a href={WHATSAPP} target="_blank" rel="noopener" className="group inline-flex items-center gap-2 bg-[var(--whatsapp)] text-white px-7 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:scale-105 transition-transform shadow-card">
                 <MessageCircle className="w-5 h-5" />
-                واتساب
-              </a>
-              <a href="#contact" className="group inline-flex items-center gap-2 glass-strong text-foreground px-6 py-4 rounded-2xl font-bold hover:bg-white/10 transition-colors">
-                اطلب تقييم مجاني
-                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
+                واتساب فوري
               </a>
             </div>
 
