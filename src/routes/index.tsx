@@ -33,7 +33,7 @@ function Loader() {
             <span className="text-primary-foreground font-black">ك</span>
           </div>
         </div>
-        <div className="text-gradient text-lg font-extrabold">الكويت للمكيفات</div>
+          <div className="text-gradient text-lg font-extrabold">الساحل الشمالي</div>
         <div className="text-xs text-muted-foreground mt-1">جارٍ التحميل...</div>
       </div>
     </motion.div>

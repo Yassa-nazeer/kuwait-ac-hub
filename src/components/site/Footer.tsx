@@ -1,4 +1,5 @@
 import { Phone, MessageCircle, MapPin, Facebook, Instagram, Twitter } from "lucide-react";
+import { Link } from "@tanstack/react-router";
 
 export function Footer() {
   return (
@@ -8,24 +9,25 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-xl gradient-primary grid place-items-center shadow-glow">
-                <span className="text-primary-foreground font-black">ك</span>
+                <span className="text-primary-foreground font-black">س</span>
               </div>
               <div>
-                <div className="font-extrabold text-foreground">الكويت للمكيفات المستعملة</div>
-                <div className="text-xs text-muted-foreground">والسكراب • منذ سنوات</div>
+                <div className="font-extrabold text-foreground">الساحل الشمالي</div>
+                <div className="text-xs text-muted-foreground">للمكيفات المستعملة والسكراب</div>
               </div>
             </div>
             <p className="text-sm text-muted-foreground max-w-md leading-relaxed">
-              نحن الخيار الأول في الكويت لشراء وبيع المكيفات المستعملة وسكراب التكييف. خدمة احترافية، أسعار مميزة، وتغطية لكل المناطق.
+              الساحل الشمالي — الخيار الأول في الكويت لشراء المكيفات المستعملة وسكراب التكييف. خدمة احترافية، أسعار مميزة، وتغطية لكل المناطق.
             </p>
           </div>
           <div>
             <h4 className="font-extrabold mb-4 text-foreground">روابط سريعة</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li><a href="#services" className="hover:text-accent">خدماتنا</a></li>
-              <li><a href="#why" className="hover:text-accent">لماذا نحن</a></li>
-              <li><a href="#gallery" className="hover:text-accent">المعرض</a></li>
-              <li><a href="#contact" className="hover:text-accent">اتصل بنا</a></li>
+              <li><Link to="/about" className="hover:text-accent">من نحن</Link></li>
+              <li><Link to="/services" className="hover:text-accent">خدماتنا</Link></li>
+              <li><Link to="/areas" className="hover:text-accent">مناطق التغطية</Link></li>
+              <li><Link to="/gallery" className="hover:text-accent">المعرض</Link></li>
+              <li><Link to="/contact" className="hover:text-accent">اتصل بنا</Link></li>
             </ul>
           </div>
           <div>
@@ -43,7 +45,7 @@ export function Footer() {
           </div>
         </div>
         <div className="pt-6 border-t border-border/50 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} الكويت للمكيفات المستعملة والسكراب. جميع الحقوق محفوظة.
+          © {new Date().getFullYear()} الساحل الشمالي للمكيفات المستعملة والسكراب. جميع الحقوق محفوظة.
         </div>
       </div>
     </footer>
