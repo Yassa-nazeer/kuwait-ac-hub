@@ -1,8 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Toaster } from "sonner";
-import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { Services } from "@/components/site/Services";
 import { WhyUs } from "@/components/site/WhyUs";
@@ -10,10 +8,16 @@ import { Areas } from "@/components/site/Areas";
 import { Gallery } from "@/components/site/Gallery";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Contact } from "@/components/site/Contact";
-import { Footer } from "@/components/site/Footer";
-import { FloatingActions } from "@/components/site/FloatingActions";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "الساحل الشمالي — شراء المكيفات المستعملة في الكويت" },
+      { name: "description", content: "الساحل الشمالي: شراء جميع أنواع المكيفات المستعملة وسكراب التكييف في الكويت بأعلى الأسعار. فك ونقل مجاني. اتصل 65954080" },
+      { property: "og:title", content: "الساحل الشمالي للمكيفات المستعملة والسكراب" },
+      { property: "og:description", content: "شراء المكيفات المستعملة والسكراب في الكويت بأعلى الأسعار." },
+    ],
+  }),
   component: Index,
 });
 
@@ -50,19 +54,13 @@ function Index() {
   return (
     <>
       <AnimatePresence>{loading && <Loader />}</AnimatePresence>
-      <Toaster position="top-center" richColors theme="dark" />
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <WhyUs />
-        <Areas />
-        <Gallery />
-        <Testimonials />
-        <Contact />
-      </main>
-      <Footer />
-      <FloatingActions />
+      <Hero />
+      <Services />
+      <WhyUs />
+      <Areas />
+      <Gallery />
+      <Testimonials />
+      <Contact />
     </>
   );
 }
