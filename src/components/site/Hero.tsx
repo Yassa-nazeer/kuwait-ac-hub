@@ -23,7 +23,7 @@ export function Hero() {
           >
             <div className="inline-flex items-center gap-2 glass rounded-full px-5 py-2.5 mb-6">
               <Sparkles className="w-4 h-4 text-accent" />
-              <span className="text-sm font-bold text-foreground">رقم 1 في الكويت لشراء المكيفات المستعملة</span>
+              <span className="text-sm font-bold text-foreground">الساحل الشمالي • رقم 1 في الكويت</span>
             </div>
 
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.12] mb-6">
@@ -43,7 +43,7 @@ export function Hero() {
               </a>
               <a href={WHATSAPP} target="_blank" rel="noopener" className="group inline-flex items-center gap-2 bg-[var(--whatsapp)] text-white px-7 py-4 md:py-5 rounded-2xl font-bold text-base md:text-lg hover:scale-105 transition-transform shadow-card">
                 <MessageCircle className="w-5 h-5" />
-                واتساب فوري
+                واتساب
               </a>
             </div>
 
